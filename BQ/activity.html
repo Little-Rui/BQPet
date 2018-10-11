@@ -35,55 +35,57 @@
     
     <!-- 标题 -->
     <div id="logo">
-        <!-- 活动广告栏 -->
-        <div class="active_ad">
-            <a href="#">
-                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538272777.jpg" alt="">
-            </a>
-        </div>
-        <!-- logo 搜索 -->
-        <div class="content clearfix">
-            <!-- logo -->
-            <div class="logo_pic">
-                <a href="#"><img src="http://b.boqiicdn.com/v2/images/shopnewlogo.png" alt=""></a>
-            </div>
-            <!-- 搜索 -->
-            <div class="sreach">
-                <div class="sreach_con clearfix">
-                    <input type="text" placeholder="伯纳天纯">
-                    <span>
-                        <a href="#">搜 索</a>
-                    </span>
-                </div>
-                <ul class="hot clearfix">
-                    <li class="keyword">
-                        热门搜索：
-                    </li>
-                    <li class="keyword">
-                        <a href="#">进口狗粮</a>
-                    </li>
-                    <li class="keyword">
-                        <a href="#">进口猫粮</a>
-                    </li>
-                    <li class="keyword">
-                        <a href="#">猫厕所</a>
-                    </li>
-                    <li class="keyword">
-                        <a href="#">猫笼</a>
-                    </li>
-                    <li class="keyword">
-                        <a href="#">口腔护理</a>
-                    </li>
-                    <li class="keyword">
-                        <a href="#">美毛护肤</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- APP广告 -->
-            <div class="ad_app">
+        <div class="logo_con">
+            <!-- 活动广告栏 -->
+            <div class="active_ad">
                 <a href="#">
-                    <img src="http://b.boqiicdn.com/v2/images/ad2.gif" alt="">
+                    <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538272777.jpg" alt="">
                 </a>
+            </div>
+            <!-- logo 搜索 -->
+            <div class="content clearfix">
+                <!-- logo -->
+                <div class="logo_pic">
+                    <a href="#"><img src="http://b.boqiicdn.com/v2/images/shopnewlogo.png" alt=""></a>
+                </div>
+                <!-- 搜索 -->
+                <div class="sreach">
+                    <div class="sreach_con clearfix">
+                        <input type="text" placeholder="伯纳天纯">
+                        <span>
+                            <a href="#">搜 索</a>
+                        </span>
+                    </div>
+                    <ul class="hot clearfix">
+                        <li class="keyword">
+                            热门搜索：
+                        </li>
+                        <li class="keyword">
+                            <a href="#">进口狗粮</a>
+                        </li>
+                        <li class="keyword">
+                            <a href="#">进口猫粮</a>
+                        </li>
+                        <li class="keyword">
+                            <a href="#">猫厕所</a>
+                        </li>
+                        <li class="keyword">
+                            <a href="#">猫笼</a>
+                        </li>
+                        <li class="keyword">
+                            <a href="#">口腔护理</a>
+                        </li>
+                        <li class="keyword">
+                            <a href="#">美毛护肤</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- APP广告 -->
+                <div class="ad_app">
+                    <a href="#">
+                        <img src="http://b.boqiicdn.com/v2/images/ad2.gif" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -261,52 +263,156 @@
     </div>
     <!-- 主题图片 -->
     <div id="activity_pic">
-        <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538049498_y.jpg" alt="">
+        <img class="bbg" src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538049498_y.jpg" alt="">
+        <!-- 侧栏及隐藏部分 -->        
         <div class="bar">
+            <!-- 侧栏隐藏部分 -->
+            <div class="usr_login" id="uLogin">
+                <p class="usr_name clearfix">
+                    <label for="u_name"></label>
+                    <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱">
+                </p>   
+                <p class="pwd clearfix">
+                    <label for="u_pwd"></label>
+                    <input type="password" name="" id="u_pwd" placeholder="密码">
+                </p>  
+                <p class="realmark clearfix">
+                    <input type="text" name="" id="" placeholder="验证码">
+                    <img src="http://www.boqii.com/user/images/vcode/vcode.php?rid=0.45855331385721554" alt="">
+                </p>
+                <p class="safe clearfix">
+                    <span class="auto_login clearfix">
+                        <input type="checkbox" name="" id="">
+                        <strong>自动登录</strong>
+                    </span>
+                    <span class="forgetpwd">
+                        <span><a href="#">忘记密码</a></span>
+                        <span><a href="#">免费注册</a></span>
+                    </span>
+                </p>
+                <button>登&nbsp;&nbsp;&nbsp;录</button>
+                <p class="fastlogin">
+                    <span>使用合作网站登陆</span>
+                    <span class="coopreation clearfix">
+                        <a href="#" class="one">支付宝</a>
+                        <a href="#">新浪微博</a>
+                        <a href="#">QQ</a>
+                        <a href="#">微信</a>
+                    </span>
+                </p>
+                <b id="no"></b>
+            </div>
+            <!-- 侧栏 -->
             <ul class="opreation">
-                <li class="user"> 
-                    <a href="#"><em class="icon1"></em></a>
+                <li class="user" id="iUser"> 
+                    <a href="#"><em></em></a>
                 </li>
                 <li class="buycar"> 
                     <a href="#">
-                        <em class="icon2"></em>
-                        <span class="car_txt">购物车</span>
-                        <span class="number"></span>
+                        <em></em>
+                        <span class="txt">购物车</span>
+                        <span class="number">0</span>
                     </a>
                 </li>
-                <li> 
+                <li class="money"> 
                     <a href="#">
-                        <em class="icon2"></em>
+                        <em></em>
                         <span>资产</span>
                     </a>
                 </li>
-                <li> 
+                <li class="collection"> 
                     <a href="#">
-                        <em class="icon2"></em>
+                        <em></em>
                         <span>收藏</span>
                     </a>
                 </li>
-                <li> 
+                <li class="ask"> 
                     <a href="#">
-                        <em class="icon2"></em>
+                        <em></em>
                         <span>咨询</span>
                     </a>
                 </li>
-                <li> 
+                <li class="App"> 
                     <a href="#">
-                        <em class="icon2"></em>
+                        <em></em>
                         <span>APP</span> 
                    </a>
                 </li>
-                <li class="top"> 
+                <li class="top" id="Top">
                     <a href="#">
-                        <em class="icon2"></em>
+                        <em></em>
                         <span>TOP</span> 
                     </a>
                 </li>
             </ul>
+            <!-- 两侧菜单 -->
+            <div class="nav_menu">
+                <dl class="left_menu">
+                    <dt class="l_tittle"><a href="#">萌主驾到</a></dt>
+                    <dd><a href="#">波奇国际</a></dd>
+                    <dd><a href="#">狗狗主粮</a></dd>
+                    <dd><a href="#">猫猫主粮</a></dd>
+                    <dd><a href="#">萌宠周边会场</a></dd>
+                    <dd class="last"><a href="#"><img src="images/top.png" alt=""></a></dd>
+                </dl>
+                <dl class="right_menu">
+                    <dt class="r_tittle"><a href="#">萌主驾到</a></dt>
+                    <dd><a href="#">福利赏金</a></dd>
+                    <dd><a href="#">精品秒杀</a></dd>
+                    <dd><a href="#">疯抢1小时</a></dd>
+                    <dd><a href="#">卖萌套餐</a></dd>
+                    <dd><a href="#">超级满减</a></dd>
+                    <dd><a href="#">活动规则</a></dd>
+                    <dd class="last"><a href="#"><img src="images/top.png" alt=""></a></dd>
+                </dl>
+            </div>
         </div> 
     </div> 
-    
+    <!-- 福利赏金 -->
+    <div id="goodnews">
+        <div class="reward">
+            <div class="coupon1 clearfix">
+                <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/Zhuanti/180929_5baf11a60f917_2387.jpg" alt=""></a>
+                <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/Zhuanti/180929_5baf1277b6522_8745.jpg" alt=""></a>
+            </div>
+            <div class="coupon2">
+                <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538203348_y.jpg" alt=""></a>
+            </div>
+        </div> 
+    </div>
+    <!-- 秒杀 -->
+    <div id="seckill">
+        <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538201118_y.jpg" alt="">
+    </div>
+    <!-- 疯抢1小时 -->
+    <div id="onehour">
+        <ul class="h_tittle clearfix">
+            <li class="active">
+                <a href="#">
+                    <span>10:00场</span>
+                    <span>已结束</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>14:00场</span>
+                    <span>已结束</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>18:00场</span>
+                    <span>已结束</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>21:00场</span>
+                    <span>已结束</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/activity.js"></script>
 </body>
 </html>
