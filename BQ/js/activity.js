@@ -10,12 +10,8 @@ for (var i = 0 ;i <= oA.length-1 ; i ++){
     oA[i].href = "javascript:;"
 }
 
+
 // 1小时
-$("#onehour li").on("click",function(){
-    this.className = "cur active";
-    this.siblings(
-        this.className = "cur"
-    );
-})
+
 
 
