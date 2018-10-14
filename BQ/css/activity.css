@@ -772,6 +772,15 @@ header a:hover{
 .package a{
     display: block;
 }
-.suprise .s_con{
-    
+/* 类目会场 */
+#catalogue{
+    width: 990px;
+    margin: 0 auto;
+}
+#catalogue ul li{
+    float: left;
+    margin: 0 10px 10px 0; 
+}
+#catalogue ul li:last-child{
+    margin-right: 0;
 }

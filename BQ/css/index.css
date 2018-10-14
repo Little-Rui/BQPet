@@ -301,5 +301,21 @@ header a:hover{
 }
 .about_pet dt em{
     background: url(http://b.boqiicdn.com/v2/images/icons/life.png) no-repeat center;
-
+}
+.con2 .banner{
+    float: left;
+    width: 800px;
+    overflow: hidden;
+}
+.banner .banner_con{
+    display: block;
+    width: 4000px;
+}
+.banner_con li{
+    float: left;
+}
+.banner_con li a{
+    display: block;
+}
+.banner_con li img{
 }
