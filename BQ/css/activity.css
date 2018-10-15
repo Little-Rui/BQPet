@@ -324,7 +324,7 @@ header a:hover{
 .bar .opreation{
     position: absolute;
     top: 40%;
-    margin-top: -221px;
+    margin-top: -191px;
 }
 .bar li{
     border-top:1px solid #343434;
@@ -334,7 +334,7 @@ header a:hover{
 .bar .App{
     border-bottom:1px solid #343434;
 }
-.bar .top{
+.bar .go_top{
     position: fixed;
     bottom: 5px;
     right: 0;
@@ -413,11 +413,11 @@ header a:hover{
 .App a:hover em{
     background-position: -36px -180px;
 }
-.top em{
+.go_top em{
     height: 30px;
     background-position: 0 -288px;
 }
-.top a:hover em{
+.go_top a:hover em{
     background-position: -36px -288px;
 }
 /* 侧栏隐藏部分 */
@@ -436,9 +436,6 @@ header a:hover{
     font-size: 14px;
     font-family: '\5b8b\4f53';
     z-index: 1;
-}
-.usr_login.active{
-    display: block;
 }
 .usr_login input{
     float: left;
@@ -508,8 +505,6 @@ header a:hover{
 .auto_login strong{
     float: left;
 }
-
-
 .safe .forgetpwd{
     float: right;
 }
@@ -563,12 +558,6 @@ header a:hover{
     background-position: -83px -8px;
 }
 /* 两侧菜单 */
-.nav_menu{
-    display: none;
-}
-.nav_menu.active{
-    display: block;
-}
 .bar .left_menu{
     position: fixed;
     left: 3px;
@@ -772,6 +761,90 @@ header a:hover{
 .package a{
     display: block;
 }
+.suprise .s_con{
+    padding:0 5px;
+}
+.s_con .goods_list{
+    float: left;
+    margin: 15px 5px 0 0;
+    background: #fff5fb;
+    width: 240px;
+}
+.s_con .goods_list:nth-child(4n){
+    margin-right: 0;
+}
+.goods_list a img{
+    height: 240px;
+    width: 240px;
+}
+.goods_list .goodstxt{
+    padding:10px 7px;
+}
+.goodstxt a{
+    display: block;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+}
+.goodstxt .discription{
+    padding-top: 8px;
+    font-size: 12px;
+    color: #636ad2;
+    height: 12px;
+    line-height: 12px;
+}
+.goodstxt .price{
+    margin-top:15px; 
+}
+.price .curer{
+    float: left;
+    background: #636ad2;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.price em{
+    float: left;
+    height: 0;
+    width: 0;
+    border-left: 7px solid #0e6ace;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    margin-right: 10px;
+}
+.price .real{
+    display: inline-block;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    color: #0e6ace;
+    font-weight: bold;
+}
+.price .old{
+    font-size: 14px ;
+    height: 18px;
+    line-height: 18px;
+    color: #949494;
+    text-decoration: line-through;
+}
+.goodstxt .buynow{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    background: #42b4fb;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
 /* 类目会场 */
 #catalogue{
     width: 990px;
@@ -784,3 +857,6 @@ header a:hover{
 #catalogue ul li:last-child{
     margin-right: 0;
 }
+
+
+

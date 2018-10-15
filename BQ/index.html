@@ -133,7 +133,9 @@
                 <a href="#">波奇服务</a>
             </li>
             <li class="nav3 clearfix">
+                <em></em>
                 <a href="#">购物车</a>
+                <span>0</span>
             </li>
         </ul>
     
@@ -141,6 +143,7 @@
     <!-- 轮播部分 -->
     <div id="content2">
         <div class="con2 clearfix">
+            <!-- 菜单 -->
             <div class="menu">
                 <div class="pet">
                     <dl class="dog">
@@ -269,44 +272,417 @@
                     </dl> 
                 </div>
             </div>
-            <div class="banner">
-                <ul class="banner_con clearfix">
-                    <li class="banner1 active">
-                        <a href="#">
-                            <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1539224295.jpg" alt="">
-                        </a>        
-                    </li>
-                    <li class="banner2">
-                        <a href="#">
-                            <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1536819429.jpg" alt="">
-                        </a>        
-                    </li>
-                    <li class="banner3">
-                        <a href="#">
-                            <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1501209373.jpg" alt="">
-                        </a>        
-                    </li>
-                    <li class="banner4">
-                        <a href="#">
-                            <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1535428217.jpg" alt="">
-                        </a>
-                    </li>
-                    <li class="banner1">
-                        <a href="#">
-                            <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1539224295.jpg" alt="">
-                        </a>        
-                    </li>
-                </ul>
-                <div class="btn" id="btnlist">
-                    <span class=" active">1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
+            <!-- 轮播 -->
+            <div class="banner" id="wrap">
+                <div class="banner_con" id="show">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1539224295.jpg" alt="">
+                            </a>        
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1536819429.jpg" alt="">
+                            </a>        
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1501209373.jpg" alt="">
+                            </a>        
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1535428217.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1539224295.jpg" alt="">
+                            </a>        
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn clearfix" id="list">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                </div>
+                <div class="news_ad clearfix">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1479882804.jpg?v=1" alt=""></a>
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1479883485.jpg?v=1" alt=""></a>
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1479883752.jpg?v=1" alt=""></a>
                 </div>
             </div>
-            <div class="news_ad"></div>
+            <!-- 波奇新闻 -->
+            <div class="bq_news">
+                <div class="news_pic">
+                    <a href="#" target="_blank"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1529976927.jpg" alt=""></a>
+                </div>
+                <div class="news_txt ">
+                    <p class="news-title clearfix">
+                        <span class="bq_information">波奇资讯</span>
+                        <span class="turn clearfix">
+                            <i class="prev"></i>
+                            <i class="next"></i>
+                        </span>
+                    </p>
+                    <ul class="news_con">
+                        <li>
+                            <a href="#">·全球购直邮商品暂停售卖通知</a>
+                        </li>
+                        <li>
+                            <a href="#">·江浙沪皖京津粤满59元免运费</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscription">
+                    <p>订阅促销信息</p>
+                    <div class="sub_bot clearfix">
+                        <input type="text" class="sub_text" value="请输入Email地址">
+                        <input type="button" class="sub_btn" value="订阅">
+                    </div>
+                </div>
+                <div class="down_qm clearfix">
+                    <img src="http://b.boqiicdn.com/v2/images/app_small.jpg">
+                    <p>
+                        <span class="name">波奇客户端</span>
+                        <span class="qm_gain">注册立享270,<br>首单再送330</span>
+                    </p>
+                </div>
+            </div> 
+            <!-- 侧栏 -->
+            <div class="bar">
+                <!-- 侧栏隐藏部分 -->
+                <div class="usr_login" id="uLogin">
+                    <p class="usr_name clearfix">
+                        <label for="u_name"></label>
+                        <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱">
+                    </p>   
+                    <p class="pwd clearfix">
+                        <label for="u_pwd"></label>
+                        <input type="password" name="" id="u_pwd" placeholder="密码">
+                    </p>  
+                    <p class="realmark clearfix">
+                        <input type="text" name="" id="" placeholder="验证码">
+                        <img src="http://www.boqii.com/user/images/vcode/vcode.php?rid=0.45855331385721554" alt="">
+                    </p>
+                    <p class="safe clearfix">
+                        <span class="auto_login clearfix">
+                            <input type="checkbox" name="" id="">
+                            <strong>自动登录</strong>
+                        </span>
+                        <span class="forgetpwd">
+                            <span><a href="#">忘记密码</a></span>
+                            <span><a href="#">免费注册</a></span>
+                        </span>
+                    </p>
+                    <button>登&nbsp;&nbsp;&nbsp;录</button>
+                    <p class="fastlogin">
+                        <span>使用合作网站登陆</span>
+                        <span class="coopreation clearfix">
+                            <a href="#" class="one">支付宝</a>
+                            <a href="#">新浪微博</a>
+                            <a href="#">QQ</a>
+                            <a href="#">微信</a>
+                        </span>
+                    </p>
+                    <b id="no"></b>
+                </div>
+                <!-- 侧栏 -->
+                <ul class="opreation">
+                    <li class="user" id="iUser"> 
+                        <a href="#"><em></em></a>
+                    </li>
+                    <li class="buycar"> 
+                        <a href="#">
+                            <em></em>
+                            <span class="txt">购物车</span>
+                            <span class="number">0</span>
+                        </a>
+                    </li>
+                    <li class="money"> 
+                        <a href="#">
+                            <em></em>
+                            <span>资产</span>
+                        </a>
+                    </li>
+                    <li class="collection"> 
+                        <a href="#">
+                            <em></em>
+                            <span>收藏</span>
+                        </a>
+                    </li>
+                    <li class="ask"> 
+                        <a href="#">
+                            <em></em>
+                            <span>咨询</span>
+                        </a>
+                    </li>
+                    <li class="App"> 
+                        <a href="#">
+                            <em></em>
+                            <span>APP</span> 
+                        </a>
+                    </li>
+                    <li class="go_top">
+                        <a href="#">
+                            <em></em>
+                            <span>TOP</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>        
         </div>
-        
-    </div>  
+    </div> 
+    <!-- 商品大集合 -->
+    <div id="goods">
+        <!-- 火爆品牌 -->
+        <div class="hotsell">
+            <h2>火爆商品</h2>
+            <ul class="hotgoods clearfix">
+                <li class="hot_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop//1/136/13612/shoppicpath11519873594_m.jpg" alt=""></a>
+                    <a href="#">比瑞吉 室内成猫粮天然粮2kg</a>
+                    <p class="clearfix">
+                        <span class="nowprice">￥132.00</span>
+                        <span class="over">已售15877</span>
+                    </p>
+                </li>
+                <li class="hot_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop//1/159/15912/shoppicpath11535447873_m.jpg" alt=""></a>
+                    <a href="#">伯纳天纯 成猫天然无谷配方猫粮1.5kg</a>
+                    <p class="clearfix">
+                        <span class="nowprice">￥119.00</span>
+                        <span class="over">已售15877</span>
+                    </p>
+                </li>
+                <li class="hot_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop//2/233/23310/shoppicpath11522749823_m.jpg" alt=""></a>
+                    <a href="#">Orijen渴望 全肉配方全猫粮5.4kg</a></a>
+                    <p class="clearfix">
+                        <span class="nowprice">￥690.00</span>
+                        <span class="over">已售13873</span>
+                    </p>
+                </li>
+                <li class="hot_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop//0/35/3576/shoppicpath11526453830_m.jpg" alt=""></a>
+                    <a href="#">BOTH 成犬山羊奶果冻布丁16g*50粒桶装 狗零食</a>
+                    <p class="clearfix">
+                        <span class="nowprice">￥52.00</span>
+                        <span class="over">已售3580</span>
+                    </p>
+                </li>
+                <li class="hot_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop//2/244/24473/shoppicpath11517537390_m.jpg" alt=""></a>
+                    <a href="#">>Meat Mates 冻干小鲜牛犬营养补充拌餐130g</a></a>
+                    <p class="clearfix">
+                        <span class="nowprice">10.00</span>
+                        <span class="over">已售862</span>
+                    </p>
+                </li>
+                <li class="hot_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop//0/14/1446/shoppicpath11536221509_m.jpg" alt=""></a>
+                    <a href="#">福来恩 犬猫灭蜱虫跳蚤喷剂100ml 猫狗体外驱虫药</a></a>
+                    <p class="clearfix">
+                        <span class="nowprice">￥108.00</span>
+                        <span class="over">已售49454</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- 知名品牌 -->
+        <div class="famous">
+            <h2>知名品牌 &nbsp;&nbsp;放心选择</h2>
+            <ul class="fgoods clearfix">
+                <li class="f_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1465358717.jpg" alt=""></a>
+                </li>
+                <li class="f_list">
+                    <a href="#" class="one"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1535021608.jpg" alt=""></a>
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1465358745.jpg" alt=""></a>
+                </li>
+                <li class="f_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1465358730.jpg" alt=""></a>
+                </li>
+                <li class="f_list">
+                    <a href="#" class="one"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1535021719.jpg" alt=""></a>
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1535021770.jpg" alt=""></a>
+                </li>
+                <li class="f_list">
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1475982589.jpg" alt=""></a>
+                    </p>
+                </li>
+                <li class="f_list">
+                    <a href="#" class="one"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1465358833.jpg" alt=""></a>
+                    <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1535021664.jpg" alt=""></a></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 狗狗商品 -->
+        <div class="puppy">
+            <dl class="goods_classify clearfix">
+                <dt>
+                    <i></i>
+                    <h2><a href="#">狗狗商品</a></h2> 
+                </dt>
+                <dd><a href="#" class="current">狗粮</a></dd>
+                <dd><a href="#">湿粮</a></dd>
+                <dd><a href="#">零食</a></dd>
+                <dd><a href="#">保健品</a></dd>
+                <dd><a href="#">医疗</a></dd>
+                <dd><a href="#">沐浴露</a></dd>
+                <dd><a href="#">日用品</a></dd>
+                <dd><a href="#">美容</a></dd>
+                <dd><a href="#">玩具</a></dd>
+                <dd><a href="#">衣服窝</a></dd>
+            </dl>
+            <div class="commodity clearfix">
+                <a class="big" href=""><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1536131626.jpg" alt=""></a>
+                <div class="commodity_con">
+                    <ul class="commodity1 clearfix">
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/233/23306/shoppicpath11517466475_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">zeal真挚 天然犬猫专用鲜牛乳 (380毫升) 猫狗零食 新西兰原装进口</a>
+                            <p class="clearfix">
+                                <span class="nowprice">￥1050.00</span>
+                                <span class="over">已售982</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/0/78/7842/shoppicpath11516863588_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">伯纳天纯 成猫天然无谷配方猫粮1.5kg</a>
+                            <p class="clearfix">
+                                <span class="nowprice">￥109.00</span>
+                                <span class="over">已售35108</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/244/24473/shoppicpath11517537390_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">Orijen渴望 全肉配方全猫粮5.4kg</a></a>
+                            <p class="clearfix">
+                                <span class="nowprice">￥105.00</span>
+                                <span class="over">已售862</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/0/28/2849/shoppicpath11525232526_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">BOTH 成犬山羊奶果冻布丁16g*50粒桶装 狗零食</a>
+                            <p class="clearfix">
+                                <span class="nowprice">￥208.00</span>
+                                <span class="over">已售462903</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/216/21694/shoppicpath11517362657_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">Meat Mates 冻干小鲜牛犬营养补充拌餐130g</a></a>
+                            <p class="clearfix">
+                                <span class="nowprice">160.00</span>
+                                <span class="over">已售5403</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/0/39/3986/shoppicpath11516846602_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">福来恩 犬猫灭蜱虫跳蚤喷剂100ml 猫狗体外驱虫药</a></a>
+                            <p class="clearfix">
+                                <span class="nowprice">￥37.30</span>
+                                <span class="over">已售178261</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/216/21694/shoppicpath11517362657_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">Meat Mates 冻干小鲜牛犬营养补充拌餐130g</a></a>
+                            <p class="clearfix">
+                                <span class="nowprice">160.00</span>
+                                <span class="over">已售5403</span>
+                            </p>
+                        </li>
+                        <li class="commodity_list">
+                            <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/0/39/3986/shoppicpath11516846602_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            <a href="#">福来恩 犬猫灭蜱虫跳蚤喷剂100ml 猫狗体外驱虫药</a></a>
+                            <p class="clearfix">
+                                <span class="nowprice">￥37.30</span>
+                                <span class="over">已售178261</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="little_ad clearfix">
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429493964.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429493993.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429494007.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429494026.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429494043.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429494059.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429494073.jpg" alt=""></a>
+                        <a href="#"><img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shoppicpath1429494091.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="r_title">波奇推荐</p>
+                    <ul class="r_con">
+                        <li class="clearfix">
+                            <p class="r_pic">
+                                <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23267/shoppicpath11520328191_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            </p>
+                            <p class="r_txt">
+                                <a href="#">怡亲yoken 泰迪成犬粮专用狗粮2.5kg</a>
+                                <em>￥99.50</em>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="r_pic">
+                                <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23267/shoppicpath11520328191_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            </p>
+                            <p class="r_txt">
+                                <a href="#">怡亲yoken 泰迪成犬粮专用狗粮2.5kg</a>
+                                <em>￥99.50</em>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="r_pic">
+                                <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23267/shoppicpath11520328191_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            </p>
+                            <p class="r_txt">
+                                <a href="#">怡亲yoken 泰迪成犬粮专用狗粮2.5kg</a>
+                                <em>￥99.50</em>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="r_pic">
+                                <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23267/shoppicpath11520328191_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            </p>
+                            <p class="r_txt">
+                                <a href="#">怡亲yoken 泰迪成犬粮专用狗粮2.5kg</a>
+                                <em>￥99.50</em>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="r_pic">
+                                <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23267/shoppicpath11520328191_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            </p>
+                            <p class="r_txt">
+                                <a href="#">怡亲yoken 泰迪成犬粮专用狗粮2.5kg</a>
+                                <em>￥99.50</em>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="r_pic">
+                                <a href="#"><img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23267/shoppicpath11520328191_y.jpg?imageView2/2/w/375/h/375/q/100/interlace/0" alt=""></a>
+                            </p>
+                            <p class="r_txt">
+                                <a href="#">怡亲yoken 泰迪成犬粮专用狗粮2.5kg</a>
+                                <em>￥99.50</em>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
