@@ -933,8 +933,12 @@ button.active{
     height: 38px;
     overflow: hidden;
 }
+.r_con .r_txt a:hover{
+    color: #e53
+}
 .r_txt em{
     display: block;
     color: #e53;
     font-size: 14px;
+    margin-top: 3px;
 }
