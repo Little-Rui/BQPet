@@ -857,6 +857,113 @@ header a:hover{
 #catalogue ul li:last-child{
     margin-right: 0;
 }
-
+/* footer */
+footer .promiss{
+    background: #e53;
+}
+.promiss .p-con{
+    display: block;
+    width: 990px;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align:center;
+    color: #fff;
+}
+.p-con li{
+    float: left;
+    border-right: 1px dashed #fff;
+    width: 196px;
+    font-size: 12px;
+}
+.p-con li:last-child{
+    border-right: none;
+}
+.p-con li em{
+    display: block;
+    height: 42px;
+    width: 56px;
+    background: url(http://b.boqiicdn.com/v2/images/foot.png) no-repeat;
+    margin: 0 0 0 75px;
+}
+.p-con li.fast em{
+    background-position: -85px 0;
+}
+.p-con li.back em{
+    background-position: -170px 0
+}
+.p-con li.nice em{
+    background-position: -255px 0;
+}
+.p-con li.good em{
+    background-position: -340px 0;
+}
+.p-con li .one{
+    font: 16px/18px "Microsoft YaHei";
+    padding: 10px 0 5px; 
+}
+/* 服务 */
+footer .help{
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+}
+.help .c-help{
+    margin: 0 auto;
+    width: 990px;
+    padding: 15px 0;
+}
+.c-help dl{
+    float: left;
+    padding-left: 110px;
+    width: 70px;
+}
+.c-help dt{
+    font-weight: bold;
+    color: #464646;
+    font-size: 14px;
+}
+.c-help dd a{
+    display: block;
+    padding-top: 6px;
+    color: #666;
+    font-size: 12px;
+}
+.c-help dd a:hover{
+    color: #e53;
+}
+/* 版权 */
+footer .copyright{
+    width: 990px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+.copyright a{
+    color: #333;
+}
+.copyright a:hover{
+    color: #e53;
+    text-decoration: underline
+}
+.copyright span{
+    padding: 0 8px;
+    color: #999;
+}
+.copyright p{
+    line-height: 22px;
+}
+.copyright img{
+    display: inline-block;
+}
+.copyright p:nth-child(2) img{
+    position: relative;
+    top: 5px; 
+}
+.copyright p:last-child img{
+    margin: 10px 10px 0 0;
+    height: 35px;
+    width: 100px;
+}
 
 

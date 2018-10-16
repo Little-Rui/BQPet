@@ -949,7 +949,7 @@ button.active{
 }
 #evaluation .e_con{
     float: left;
-    width: 990px;
+    width: 989px;
 }
 .e_con .top-title{
     margin-top: 25px;
@@ -962,4 +962,269 @@ button.active{
     height: 25px;
     line-height: 25px;
     padding-bottom: 5px; 
+    padding-left: 35px;
+}
+.top-title em{
+    display: block;
+    height: 25px;
+    width: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat -113px -38px;
+}
+.e_con .bot-con{
+    display: block
+}
+.bot-con li{
+    float: left;
+    padding: 15px;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    width: 463px;
+}
+.bot-con li:nth-of-type(2n){
+    border-right: 1px solid #e6e6e6;
+}
+.bot-con li .head-pic{
+    float: left;
+    color: #e6e6e6;
+    font-size: 12px;
+}
+.head-pic img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.head-pic p{
+    padding-top: 5px;
+    height: 12px;
+    line-height: 12px;
+    width: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.bot-con .eva-con{
+    float: left;
+    width: 315px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #e53;
+} 
+.eva-con .level{
+    height: 14px;
+    line-height: 14px;
+}
+.level i{
+    float: left;
+    width: 78px;
+    height: 14px;
+    background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat 0 -77px;
+    margin-right: 5px;
+}
+.level em{
+    float: left;
+}
+.level span{
+    float: right
+}
+.eva-con .e-txt a{
+    display: block;
+    color: #666;
+    line-height: 18px;
+    padding: 5px 0 0;
+    height: 34px;
+    overflow: hidden;
+}
+.eva-con .e-txt a:hover{
+    color: #e53;
+}
+.bot-con .bought{
+    float: right;
+}
+.bought img{
+    height: 60px;
+    width: 60px;
+}
+/* 关注我们 */
+#evaluation .focus{
+    float: right;
+    width: 190px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.focus h2{
+    color: #e53;
+    font: 20px/25px "Microsoft YaHei";
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 5px;  
+    border-bottom: 2px solid #e53;
+}
+.focus .f-bot{
+    display: block;
+    font-size: 12px;
+}
+.f-bot li{
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+}
+.f-bot li em{
+    float: left;
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat;
+    background-position: -113px -77px;
+}
+.f-bot li p{
+    float: left;
+}
+.f-bot li p i{
+    display: block;
+    color: #e53;
+    font-weight: bold;
+    line-height: 19px;
+    padding-top: 1px;
+}
+.f-bot li p i.one{
+    color: #666;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+.f-bot li p i.two{
+    color: #666;
+    font-weight: normal;
+}
+.f-bot li p i.two a{
+    color: #666;
+}
+.f-bot li p i.two a:hover{
+    color: #e53;
+}
+.f-bot li p i.two span{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat -195px -77px;
+    margin-left: 6px;
+    vertical-align: middle
+}
+.f-bot li p i.thr a{
+    display: block;
+    width: 80px;
+    height: 28px;
+    background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat -195px -96px;
+}
+.f-bot li p i.thr a:hover{
+    background-position: -195px -130px;
+}
+/* footer */
+footer .promiss{
+    background: #e53;
+}
+.promiss .p-con{
+    display: block;
+    width: 990px;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align:center;
+    color: #fff;
+}
+.p-con li{
+    float: left;
+    border-right: 1px dashed #fff;
+    width: 196px;
+    font-size: 12px;
+}
+.p-con li:last-child{
+    border-right: none;
+}
+.p-con li em{
+    display: block;
+    height: 42px;
+    width: 56px;
+    background: url(http://b.boqiicdn.com/v2/images/foot.png) no-repeat;
+    margin: 0 0 0 75px;
+}
+.p-con li.fast em{
+    background-position: -85px 0;
+}
+.p-con li.back em{
+    background-position: -170px 0
+}
+.p-con li.nice em{
+    background-position: -255px 0;
+}
+.p-con li.good em{
+    background-position: -340px 0;
+}
+.p-con li .one{
+    font: 16px/18px "Microsoft YaHei";
+    padding: 10px 0 5px; 
+}
+/* 服务 */
+footer .help{
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+}
+.help .c-help{
+    margin: 0 auto;
+    width: 990px;
+    padding: 15px 0;
+}
+.c-help dl{
+    float: left;
+    padding-left: 110px;
+    width: 70px;
+}
+.c-help dt{
+    font-weight: bold;
+    color: #464646;
+    font-size: 14px;
+}
+.c-help dd a{
+    display: block;
+    padding-top: 6px;
+    color: #666;
+    font-size: 12px;
+}
+.c-help dd a:hover{
+    color: #e53;
+}
+/* 版权 */
+footer .copyright{
+    width: 990px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+.copyright a{
+    color: #333;
+}
+.copyright a:hover{
+    color: #e53;
+    text-decoration: underline
+}
+.copyright span{
+    padding: 0 8px;
+    color: #999;
+}
+.copyright p{
+    line-height: 22px;
+}
+.copyright img{
+    display: inline-block;
+}
+.copyright p:nth-child(2) img{
+    position: relative;
+    top: 5px; 
+}
+.copyright p:last-child img{
+    margin: 10px 10px 0 0;
+    height: 35px;
+    width: 100px
 }
