@@ -942,3 +942,24 @@ button.active{
     font-size: 14px;
     margin-top: 3px;
 }
+/* 热门评价 */
+#evaluation{
+    width: 1190px;
+    margin: 0 auto;
+}
+#evaluation .e_con{
+    float: left;
+    width: 990px;
+}
+.e_con .top-title{
+    margin-top: 25px;
+    border-bottom: 2px solid #e53;
+    position: relative;
+}
+.top-title h2{
+    color: #e53;
+    font: 20px/25px "Microsoft YaHei";
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 5px; 
+}
