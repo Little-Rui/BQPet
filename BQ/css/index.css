@@ -59,6 +59,15 @@ header a:hover{
     padding-left: 15px;
     padding-right: 7px
 }
+.select.active{
+    position: relative;
+    padding: 0 10px;
+    width: 64px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+    margin-left: -1px;
+}
 .select .sec-lev{
     display: inline-block;
     height: 4px;
@@ -68,6 +77,10 @@ header a:hover{
     position: absolute;
     top: 16px;
     right: 10px;
+}
+.select.active .sec-lev{
+    background-position: -10px -61px;
+    right: 13px;
 }
 .address .st_city{
     display: none;
@@ -132,16 +145,142 @@ header a:hover{
 .r_toolbar .last{
     border-right: none;
     position: relative;
-    padding-left:35px; 
+    width: 82px
 }
 .last .bg{
-    display: inline-block;
+    float: left;
+    padding-top: 3px;
     height: 13px;
     width: 15px;
-    background: url(http://b.boqiicdn.com/v2/images/r_icon.png) no-repeat;
+    background: url(http://b.boqiicdn.com/v2/images/r_icon.png) no-repeat left bottom;
+    margin-right: 10px;
+}
+.r_toolbar .has{
+    position: relative;
+}
+.has .tel_select{
+    display: none;
     position: absolute;
-    left: 10px;
-    top: 2px;
+    top: 36px;
+    right: 0;
+    background: #fff;
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.tel_select dt{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.tel_select dd{
+    float: left;
+    font: 14px/16px "Microsoft YaHei";
+    color: #ff6655;
+    padding: 0 0 4px;
+    width: 120px;
+}
+.tel_select dd strong{
+    color: #666;
+    font: 14px/16px "Microsoft YaHei";
+}
+.tel_select dd .iphone{
+    display: block;
+    width: 90px;
+    height: 28px;
+    background: url(http://b.boqiicdn.com/v2/images/btn.png) no-repeat -285px -244px
+}
+.tel_select dd .android{
+    display: block;
+    width: 90px;
+    height: 28px;
+    background: url(http://b.boqiicdn.com/v2/images/btn.png) no-repeat -285px -306px
+}
+.r_toolbar .konw{
+    position: relative;
+}
+.konw .gz_select{
+    display: none;
+    background: #fff;
+    width: 201px;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    border: 1px solid #ccc;
+}
+.gz_select dl{
+    float: left;
+    padding: 10px;
+    font: 14px/16px "Microsoft YaHei";
+    color: #666;
+    text-align: left;
+}
+.gz_select dl:first-child{
+    border-right: 1px dashed #ccc;
+}
+.gz_select dd{
+    padding: 4px 0 0
+}
+.gz_select dd.red{
+    color: #e53;
+    font: 14px/20px "Microsoft YaHei";
+}
+.gz_select .red span{
+    display: inline-block;
+    background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat scroll -195px -77px;
+    height: 14px;
+    margin-left: 6px;
+    width: 16px
+}
+.gz_select .red a{
+    color: #e53;
+}
+
+.last .r_select{
+    display: none;
+    position: absolute;
+    top: 37px;
+    right: -1px;
+    width: 103px;
+    background: #fff; 
+    z-index: 1;
+}
+.last .r_select a{
+    display: block;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: 1px dotted #ccc;
+    padding: 0 8px;
+    line-height: 28px;
+}
+.r_select a em{
+    float: left;
+    width: 20px;
+    height: 14px;
+    background: url(http://b.boqiicdn.com/v2/images/toolbar.png) no-repeat 0 0;
+    margin: 8px 8px 0 0;
+    background-position: -20px -45px;
+}
+.r_select a em.a3{
+    background-position: -40px -45px;
+}
+.r_select a em.a4{
+    background-position: -60px -45px;
+}
+.r_toolbar li.up{
+    padding: 10px;
+    margin: 0;
+    border-left: 1px solid #ccc;
+    margin-left: -1px;
+}
+.r_toolbar li.cur{
+    border: 1px solid #ccc;
+    margin:0;
+    padding: 10px;
+    border-width: 0 1px;
+    margin-left:-1px;
+    width: 81px
 }
 
 /*  标题搜索栏 */
@@ -273,6 +412,7 @@ header a:hover{
     position: relative;
     background: #c20;
     padding-left: 15px;
+    color: #fff;
 }
 .nav_con .nav3 a{
     float: left;
@@ -288,8 +428,41 @@ header a:hover{
 .nav3 span{
     float: left;
     padding: 0 20px;
-    color: #fff;
+    
 }
+.nav3 .shop_cart{
+    display: none;
+    position: absolute;
+    top: 34px;
+    right: -2px;
+    width: 298px;
+    background: #fef2ee;
+    border: 2px solid #c20;
+    border-top: none;
+    padding: 24px 0;
+    text-align: center;
+    font: 14px/16px "Microsoft YaHei";
+    color: #999;
+    z-index: 1;
+}
+.nav3.cur{
+    background: #fef2ee;
+    color: #ee5533;
+    border: 2px solid #c20;
+    border-bottom: none;
+    padding-left: 13px;
+    height: 34px;
+}
+.nav3.cur span{
+    padding: 0 18px 0 20px
+}
+.nav3.cur a{
+    color: #ee5533;
+}
+.nav3.cur em{
+    background-position: -58px -21px
+}
+
 /* 轮播部分*/
 #content2{
     background: #f3f3f3;
@@ -305,50 +478,52 @@ header a:hover{
     border: 1px solid #c20;
     background: #fff;
 }
-.menu .pet{
+.menu dl{
     padding: 8px 9px 13px;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
-.pet:last-child{
-    border-bottom: none;
-}
-.pet a{
+
+.menu a{
     color: #333;
 }
-.pet a:hover{
+.menu a:hover{
     color: #e53;
     text-decoration: underline
 }
-.pet dd{
+.menu dd{
     display: inline-block;
     width: 53px;
     padding-top: 5px;
     font: 14px/16px "Microsoft YaHei";
     line-height: 16px;
 }
-.pet dd a{
+.menu dd a{
     color: #666;
 }
-.pet dt{
+.menu dt{
     font:16px/18px "Microsoft YaHei";
 }
-.pet dt em{
+.menu dt em{
     float: left;
     height: 24px;
     width: 24px;
     margin-right: 10px;
     background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat -195px -171px;
 }
-.pet dt a{
+.menu dt a{
     float: left;
     line-height: 24px;
 }
-.pet dt span{
+.menu dt span{
     float: right;
     height: 9px;
     width: 6px;
     background: url(http://b.boqiicdn.com/v2/images/icon.png) no-repeat -195px -222px;
     margin-top: 8px;
+}
+.pet5 dl{
+    border-bottom: none;
 }
 .cat dt em{
     background-position:-226px -170px;
@@ -362,6 +537,62 @@ header a:hover{
 .about_pet dt em{
     background: url(http://b.boqiicdn.com/v2/images/icons/life.png) no-repeat center;
 }
+/* 菜单隐藏部分 */
+.menu{
+    position: relative;
+}
+.condiv0{
+    display: none;
+    position: absolute;
+    left: 188px;
+    top: -2px;
+    background: url(http://b.boqiicdn.com/v2/images/opa.png) repeat;
+    z-index: 1;
+    height: 438px;
+    border: 2px solid #cf2d0d;
+    padding: 5px 20px;
+}
+.condiv0 dl{
+    border-bottom: 1px dashed #ccc;
+    padding: 6px 0;
+    width: 578px;
+    color: #ccc;
+}
+.condiv0 dl:last-child{
+    border: none;
+}
+.condiv0 dl dt{
+    float: left;
+    width: 118px;
+    height: 19px;
+    margin-top: 1px;
+}
+.condiv0 dl dt a{
+    display: block;
+    font: bold 14px/16px "Microsoft YaHei";
+    color: #f50;
+    line-height: 16px；
+}
+.condiv0 dl dd{
+    float: left;
+    width: 460px;
+    padding: 0;
+}
+.condiv0 dl dd a{
+    display: inline-block;
+    font: 14px/20px "Microsoft YaHei";
+    color: #666;
+    margin: 1px 5px;
+    line-height: 20px;
+}
+.menu .out{
+    border: 2px solid #cf2d0d;
+    border-right:none;          
+}
+.menu .out dl{
+    padding: 6px 8px 11px 7px;
+}
+
 /* 轮播 */
 .con2 .banner{
     float: left;

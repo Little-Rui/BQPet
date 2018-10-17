@@ -13,12 +13,80 @@ for (var i = 0 ;i <= oA.length-1 ; i ++){
 
 // 城市的隐藏出现
 $(".st_city").hide();
-$(".address").on({"mouseenter":function(){
-    $(".st_city").show();
-},
-"mouseleave":function(){
-    $(".st_city").hide();
+$(".address").on({
+    "mouseenter":function(){
+        $(".st_city").show();
+        $(".select"). addClass("active");
+    },
+    "mouseleave":function(){
+        $(".st_city").hide();
+    $(".select"). removeClass("active");
+
+    }
+})
+
+var oPet = document.querySelectorAll(".pet");
+var oCondiv0 = document.querySelectorAll(".condiv0");
+for(let i = 0 ; i < oPet.length ; i++){
+    oPet[i].onmouseenter = function(){
+        oCondiv0[i].style.display = "block";
+        oPet[i].className = "pet out";
+    }
+    oPet[i].onmouseleave = function(){
+        oCondiv0[i].style.display = "none";
+        oPet[i].className = "pet";
+    }
 }
+
+// 手机版
+$(".tel_select").hide();
+$(".has").on({
+    "mouseenter":function(){
+        $(".tel_select").show();
+        $(".has").addClass("up")
+    },
+    "mouseleave":function(){
+        $(".tel_select").hide();
+        $(".has").removeClass("up")
+    }
+})
+
+// 波奇首页分页
+$(".r_select").hide();
+$(".last").on({
+    "mouseover":function(){
+        $(".r_select").show();
+        $(".last").addClass("cur")
+    },
+    "mouseleave":function(){
+        $(".r_select").hide();
+        $(".last").removeClass("cur")
+    }
+})
+
+// 购物车
+$(".shop_cart").hide();
+$(".nav3").on({
+    "mouseover":function(){
+        $(".shop_cart").show();
+        $(".nav3").addClass("cur")
+    },
+    "mouseleave":function(){
+        $(".shop_cart").hide();
+        $(".nav3").removeClass("cur")
+    }
+})
+// 关注我们
+$(".gz_select").hide();
+$(".konw").on({
+    "mouseenter":function(){
+        $(".gz_select").show();
+        $(".konw").addClass("up")
+    },
+    "mouseleave":function(){
+        $(".gz_select").hide();
+        $(".konw").removeClass("up")
+    }
 })
 
 // 轮播图
@@ -93,9 +161,7 @@ $.extend(Banner.prototype,{
     toIndex:function(event){
         // 要获取当前元素的下标么;
         var target = event.target || event.srcElement;
-        // console.log(event);
-        // console.log($(target).index());
-        // index();
+      
         this.nowIndex = $(target).index();
         this.animate();
     },
@@ -115,11 +181,9 @@ $.extend(Banner.prototype,{
             this.right_btn.triggerHandler("click");
             this.next();
         }.bind(this),3000)
-        console.log("自动播放")
     },
     stopPlay:function(){
         clearInterval(this.autoPlay_timer);
-        console.log("停止播放")
     }
 })
 
