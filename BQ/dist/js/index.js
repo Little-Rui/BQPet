@@ -11,6 +11,16 @@ for (var i = 0 ;i <= oA.length-1 ; i ++){
     oA[i].href = "javascript:;"
 }
 
+// 城市的隐藏出现
+$(".st_city").hide();
+$(".address").on({"mouseenter":function(){
+    $(".st_city").show();
+},
+"mouseleave":function(){
+    $(".st_city").hide();
+}
+})
+
 // 轮播图
 function Banner(){}
 $.extend(Banner.prototype,{

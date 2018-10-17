@@ -64,6 +64,8 @@ $.extend(WaterFall.prototype,{
         }
         return $.ajax(opt);
     },
+
+    
     renderPage:function(json){
         var html = "";
         for(var i = 0 ; i < json.length ; i ++){
@@ -90,6 +92,7 @@ $.extend(WaterFall.prototype,{
         $(window).on("scroll",this.ifLoad.bind(this));
     },
     ifLoad(){
+       
         var scrollTop = $("html,body").scrollTop();
         var clientHeight = $("html")[0].clientHeight;
         var lastBox = this.main.children(":last");
