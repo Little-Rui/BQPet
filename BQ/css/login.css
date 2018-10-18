@@ -50,8 +50,7 @@ header h1{
     line-height: 28px;
     padding: 10px 0 10px 10px;
     color: #666;
-    font-size: 14px;
-    font-family: '\5b8b\4f53';
+    font: 14px/28px "Microsoft YaHei";
 }
 .usr_login .l_method{
     height: 49px;
@@ -74,6 +73,9 @@ header h1{
 }
 .l_method a:last-child{
     border-right: none;
+}
+.usr_login .cont li:last-child{
+    display: none;
 }
 .usr_login .usr_name{
     border: 1px solid #dddddd;
@@ -156,6 +158,38 @@ header h1{
 }
 .usr_login.active a:hover{
     text-decoration: underline;
+}
+.usr_num{
+    border: 1px solid #dddddd;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 10px
+}
+.usr_num label{
+    background: url(http://a.boqiicdn.com/Images/sitenew/login/phone.png) no-repeat
+}
+.realnum input{
+    float: left;
+    border: 1px solid #dddddd;
+    height: 48px;
+    line-height: 48px;
+    width: 223px;
+    padding: 0 10px;
+    font: 14px/28px "Microsoft YaHei";
+    border-top: none;
+}
+.realnum span{
+    float: left;
+    width: 163px;
+    border: 1px solid #f65;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: -1px
+}
+.realnum span a{
+    display: block;
+    color: #f65
 }
 .usr_login button{
     font: 24px/46px "Microsoft YaHei";

@@ -264,4 +264,9 @@ tab5.init({
     abtn : "#menu_list5 dd a",
     aItem: "#box5 .l_list"
 })
+var tab6 = new Tab();
+tab6.init({
+    abtn : "#l_method a",
+    aItem: "#method_con .l_list"
+})
 

@@ -16,33 +16,54 @@
     <div id="content" class="clearfix">
         <a class="left" href="#"><img src="http://a.boqiicdn.com/Images/sitenew/login/log3.jpg" alt=""></a>
         <form action="" method="" class="usr_login" id="uLogin">
-            <p class="l_method clearfix">
+            <p class="l_method clearfix" id="l_method">
                 <a class="cur" href="#">账号密码登录</a>
                 <a href="#">手机动态码登录</a>
             </p>
-            <p class="usr_name clearfix">
-                <label for="u_name"></label>
-                <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱">
-            </p>   
-            <p class="pwd clearfix">
-                <label for="u_pwd"></label>
-                <input type="password" name="" id="u_pwd" placeholder="密码">
-            </p>  
-            <p class="realmark clearfix">
-                <input type="text" name="" placeholder="验证码">
-                <img src="http://www.boqii.com/user/images/vcode/vcode.php?rid=0.45855331385721554" alt="">
-                <strong><a href="#">换一张</a></strong>
-            </p>
-            <p class="safe clearfix">
-                <span class="auto_login clearfix">
-                    <input type="checkbox" name="">
-                    <strong>自动登录</strong>
-                </span>
-                <span class="forgetpwd">
-                    <span><a href="#">忘记密码</a></span>
-                    <span><a href="#">免费注册</a></span>
-                </span>
-            </p>
+            <ul class="cont" id="method_con">
+                <li class="l_list">
+                    <p class="usr_name clearfix">
+                        <label for="u_name"></label>
+                        <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱">
+                    </p>   
+                    <p class="pwd clearfix">
+                        <label for="u_pwd"></label>
+                        <input type="password" name="" id="u_pwd" placeholder="密码">
+                    </p>  
+                    <p class="realmark clearfix">
+                        <input type="text" name="" placeholder="验证码">
+                        <img src="http://www.boqii.com/user/images/vcode/vcode.php?rid=0.45855331385721554" alt="">
+                        <strong><a href="#">换一张</a></strong>
+                    </p>
+                    <p class="safe clearfix">
+                        <span class="auto_login clearfix">
+                            <input type="checkbox" name="">
+                            <strong>自动登录</strong>
+                        </span>
+                        <span class="forgetpwd">
+                            <span><a href="#">忘记密码</a></span>
+                            <span><a href="#">免费注册</a></span>
+                        </span>
+                    </p>
+                </li>
+                <li class="l_list">
+                    <p class="usr_num clearfix">
+                        <label for="u_num"></label>
+                        <input type="text" name="" id="u_num" placeholder="请输入手机号">
+                    </p>   
+                    <p class="realnum clearfix">
+                        <input type="text" name="" placeholder="验证码">
+                        <span><a href="#">获取验证码</a></span>
+                    </p>
+                    <p class="safe clearfix">
+                        <span class="auto_login clearfix">
+                            <input type="checkbox" name="">
+                            <strong>自动登录</strong>
+                        </span>
+                    </p>
+                </li>
+            </ul>
+            
             <button>登&nbsp;&nbsp;录</button>
             
             <fieldset class="fastlogin">
@@ -88,5 +109,7 @@
             </p>
         </div>
     </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
