@@ -1074,10 +1074,10 @@ button.active{
     margin-bottom: 10px
 }
 /* 狗狗商品 */
-#goods .puppy{
+#goods .animal{
     margin-top: 20px;
 }
-.puppy .goods_classify{
+.animal .goods_classify{
     display: block;
     border-bottom: 2px solid #e53
 
@@ -1099,6 +1099,19 @@ button.active{
     top: 5px;
     left: 0;
 }
+.goods_classify dt i.cat{
+    background-position: -57px 0;
+}
+.goods_classify dt i.s_pet{
+    background-position: -113px 0;
+    margin-left: 5px
+}
+.goods_classify dt i.w_pet{
+    background-position: -170px 0;
+}
+.goods_classify dt i.g_pet{
+    background-position: -227px 0;
+}
 .goods_classify dt a{
     color: #e53;
     font-size: 20px;
@@ -1110,10 +1123,10 @@ button.active{
     float: left;
     height: 38px;
     line-height: 38px;
-    font:16px/32px "Microsoft YaHei";
 }
 .goods_classify dd a{
-    display: block;
+    float: left;
+    font:16px/32px "Microsoft YaHei";
     height: 38px;
     line-height: 38px;
     padding: 0 15px;
@@ -1127,15 +1140,19 @@ button.active{
 .goods_classify dd:last-of-type a{
     background-image: none;
 }
-.puppy .commodity .big{
+.animal .commodity .big{
     float: left;
 }
-.puppy .commodity .big img{
+.animal .commodity .big img{
     height: 480px;
 }
-.puppy .commodity_con{
+.animal .commodity_con{
     float: left;
     width: 800px;
+}
+.commodity_con .list{
+    height: 420px;
+    overflow: hidden;
 }
 .commodity1 .commodity_list{
     float: left;

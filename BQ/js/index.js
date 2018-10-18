@@ -163,6 +163,7 @@ $.extend(Banner.prototype,{
         var target = event.target || event.srcElement;
       
         this.nowIndex = $(target).index();
+        
         this.animate();
     },
     animate:function(){
@@ -208,5 +209,59 @@ $("#iUser").click( function(){
         oUlogin.style.background = "#0c0c0c"
     })
 
+})
+
+
+// 选项卡
+function Tab(){}
+$.extend(Tab.prototype,{
+    init: function(options){
+        this.aBtn = $(options.abtn);
+        this.aItem = $(options.aItem);
+        // console.log(this.aBtn)
+        this.aItem_num = this.aItem.length;
+        this.bindEvent();
+    },
+    bindEvent : function(){
+        this.aBtn.mouseenter($.proxy(this.getindex , this));
+    },
+    getindex : function(event){
+        var target = event.target || event.srcElement;
+        this.nowIndex = $(target).index();
+        this.show()
+    },
+    show : function(){
+        this.aBtn.eq(this.nowIndex).addClass("current")
+        .siblings("a").removeClass();
+        this.aItem.eq(this.nowIndex).show()
+        .siblings(".l_list").hide()   
+    }
+})
+var tab = new Tab();
+tab.init({
+    abtn : "#menu_list1 dd a",
+    aItem: "#box1 .l_list"
+})
+
+var tab2 = new Tab();
+tab2.init({
+    abtn : "#menu_list2 dd a",
+    aItem: "#box2 .l_list"
+})
+var tab3 = new Tab();
+tab3.init({
+    abtn : "#menu_list3 dd a",
+    aItem: "#box3 .l_list"
+})
+
+var tab4 = new Tab();
+tab4.init({
+    abtn : "#menu_list4 dd a",
+    aItem: "#box4 .l_list"
+})
+var tab5 = new Tab();
+tab5.init({
+    abtn : "#menu_list5 dd a",
+    aItem: "#box5 .l_list"
 })
 
