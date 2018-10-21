@@ -28,12 +28,6 @@ tab6.init({
     aItem: "#method_con .l_list"
 })
 
-// 所有的 a标签 不刷新
-var oA = document.querySelectorAll("a");
-for (var i = 0 ;i <= oA.length-1 ; i ++){
-    oA[i].href = "javascript:;"
-}
-
 
 // 邮箱验证
 window.onload = function(){
@@ -44,6 +38,11 @@ window.onload = function(){
             $(".bg").show();
             $("#bg1").show()
             .siblings().hide();
+            this.pass = false  //
+
+        }else{
+            this.pass = true;  //
+
         }
     })
     // 密码不为空
@@ -52,6 +51,12 @@ window.onload = function(){
             $(".bg").show();
             $("#bg2").show()
             .siblings().hide();
+            this.pass = false  //
+
+        }
+        else{
+            this.pass = true;  //
+
         }
     })
     // 验证码
@@ -61,11 +66,18 @@ window.onload = function(){
             $(".no").show();
             $("#bg3").show()
             .siblings().hide();
+            this.pass = false  //
+
+        }else{
+            this.pass = true;  //
+
         }
     })
     $("#l_btn").click(function(event){
         var evt = event || window.event;  
         var pass = true;  
+        var oUser = document.querySelector("#u_name");
+        var oUpwd = document.querySelector("#u_pwd");
         for(var i = 0;i < $("input[data=reg]").length;i++){  
             if(!$("input[data=reg]")[i].pass){  
                 pass=false;
@@ -83,10 +95,11 @@ window.onload = function(){
         $.ajax({
             type: 'GET',
             url: "http://localhost:8888/proxy/localhost/BQ/login.php",
-            data: `username=${$("#u_name").value}&password=${$("#u_pwd").value}`,			  
+            data: `username=${oUser.value}&password=${oUpwd.value}`,			  
         })
         .then(function(res){
-            if(res == "登录成功"){
+            console.log(res);
+            if(res == "登陆成功"){
                 window.location.href = "http://localhost:8888";
             }else{
                 $(".bg").show();

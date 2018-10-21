@@ -215,7 +215,8 @@ header h1{
     display: block;
     color: #f65
 }
-.usr_login button{
+.usr_login .btn{
+    display: block;
     font: 24px/46px "Microsoft YaHei";
     color: #fff;
     background: #f65;

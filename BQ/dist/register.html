@@ -12,21 +12,109 @@
     <header class="clearfix">
         <a href="#"><img src="http://a.boqiicdn.com/Images/sitenew/logo2.png" alt=""></a>
         <h1>用户注册</h1>
-        <p>
-            已有波奇账号，
+        <p class="clearfix">
+            <span>已有波奇账号,</span> 
             <a href="login.html">直接登录</a>
         </p>
     </header>  
-    <section>
+    <section class="clearfix">
         <div class="left">
             <div class="title">
                 <i></i>
-                <h2>手机注册</h2>
+                <span>手机注册</span>
             </div>
+            <form action="" method="">
+                <p class="number clearfix">
+                    <span>手机号码：</span>
+                    <input type="text" id="mobile" placeholder="请输入手机号码" data=reg>
+                    <b class="test1">
+                        <em class="t11">请输入手机号码!</em>
+                        <em class="t12">请输入正确的手机号码！</em>
+                    </b>
+                    <i class="ok1"></i>
+                </p>
+                <p class="pwd clearfix">
+                    <span>设置密码：</span>
+                    <input type="text" id="pwd" placeholder="6-20大小写英文字母、数字或符号" data=reg>
+                    <b class="test2">
+                        <em class="t21">请输入密码!</em>
+                        <em class="t22">请输入正确的密码格式！</em>
+                    </b>
+                    <i class="ok2"></i>
+                </p>
+                <p class="config clearfix">
+                    <span>确认密码：</span>
+                    <input type="text" id="sec_pwd" placeholder="请再次输入密码" data=reg>
+                    <b class="test3">
+                        <em class="t31">请再次输入密码!</em>
+                        <em class="t32">您输入的两次密码不一致</em>
+                        <em class="t33">请输入正确的密码格式！</em>
+                    </b>
+                    <i class="ok3"></i>
+                </p>
+                <p class="user clearfix">
+                    <span>昵称：</span>
+                    <input type="text" id="name" placeholder="请输入昵称" data=reg>
+                   
+                </p>
+                <p class="qm clearfix">
+                    <span>验证码：</span>
+                    <input type="text" id="qm">
+                    <img src="http://www.boqii.com/user/images/vcode/vcode.php?update==0.2851199524544952" alt="">
+                    <span class="clear"><a href="#">看不清？换一张</a></span>
+                </p>
+                <p class="message clearfix">
+                    <span>短信验证码：</span>
+                    <input type="text" id="txt_qm">
+                    <a href="#">获取短信验证码</a>
+                </p>
+                <p class="agree clearfix">
+                    <input type="checkbox" name="" id="">
+                    <span>我已阅读并同意<a href="#">《波奇网服务协议》</a></span>
+                </p>
+                <i class="btn" id="btn">注册</i>
+                
+            </form>
         </div>
-        <div class="rifht">
-
+        <div class="right">
+           <a href=""><img src="http://a.boqiicdn.com/Images/sitenew/login/reg3.jpg" alt=""></a> 
         </div>
     </section>
+    <footer>
+        <div class="copyright">
+            <p class="link">
+                <a>关于波奇</a><span>|</span>
+                <a href="#">友情链接</a><span>|</span>
+                <a href="#">诚聘英才</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">网站地图</a><span>|</span>
+                <a href="#">意见反馈</a><span>|</span>
+                <a href="#">帮助中心</a><span>|</span>
+                <i>客服热线：400-820-6098</i>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="http://b.boqiicdn.com/v2/images/icons/beian.png" alt=""> 
+                    <i>沪公网安备 31011502004955号</i>
+                </a>
+                <span>|</span>
+                <a href="#">沪ICP备13034501号-2</a><span>|</span>
+                <i>&nbsp;增值电信业务经营许可证：</i>
+                <a href="#">沪B2-20140120</a>
+            </p>
+            <p class="copy">
+                Copyright © 2007-2018 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有 
+            </p>
+            <p>
+                <a href="#"><img src="http://b.boqiicdn.com/v2/images/foot_gs.png"></a>
+                <a href="#"><img src="http://b.boqiicdn.com/v2/images/foot_cx.png"></a>
+                <a href="#"><img src="http://b.boqiicdn.com/v2/images/foot_kx.png"></a>
+                <a href="#"><img src="http://b.boqiicdn.com/v2/images/foot_zx.png"></a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/ajax.js"></script>
 </body>
 </html>
