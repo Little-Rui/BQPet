@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header>
+        <div class="header_con clearfix">
+            <ul class="l_toolbar clearfix">
+                <li class="collect"> 
+                    <em class="star"></em>                  
+                    <a href="#">收藏波奇商城</a>
+                </li>
+                <li class="address">
+                    <div class="select">
+                        <em class="map"></em>
+                        <span>北京</span>
+                        <em class="sec-lev"></em>
+                    </div>
+                    <div class="st_city">
+                        <dl class="clearfix">
+                            <dt>华东地区：</dt>
+                            <dd>
+                                <a href="#">上海</a>
+                                <a href="#">江苏</a>
+                                <a href="#">浙江</a>
+                                <a href="#">安徽</a>
+                                <a href="#">山东</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>华北东北：</dt>
+                            <dd>
+                                <a href="#" class="current">北京</a>
+                                <a href="#">天津</a>
+                                <a href="#">河北</a>
+                                <a href="#" class="selected">山西</a>
+                                <a href="#">内蒙古</a>
+                                <a href="#">辽宁</a>
+                                <a href="#">吉林</a>
+                                <a href="#">黑龙江</a>
+                            </dd>
+                        </dl>
+                        <dl class="clearfix">
+                            <dt>华南西南：</dt>
+                            <dd>
+                                <a href="#">广东</a>
+                                <a href="#">广西</a>
+                                <a href="#">海南</a>
+                                <a href="#">福建</a>
+                                <a href="#">四川</a>
+                                <a href="#">重庆</a>
+                                <a href="#">贵州</a>
+                                <a href="#">云南</a>
+                                <a href="#">西藏</a>
+                            </dd>
+                        </dl>
+                        <dl class="last clearfix">
+                            <dt>华中西北：</dt>
+                            <dd class="nobor">
+                                <a href="#">湖北</a>
+                                <a href="#">湖南</a>
+                                <a href="#">河南</a>
+                                <a href="#">江西</a>
+                                <a href="#">陕西</a>
+                                <a href="#">甘肃</a>
+                                <a href="#">青海</a>
+                                <a href="#">宁夏</a>
+                                <a href="#">新疆</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>    
+            <ul class="r_toolbar clearfix">
+                <li>
+                    <a href="login.html">登录</a>
+                </li>
+                <li>
+                    <a href="register.html">注册</a>
+                </li>
+                <li class="has">
+                    <a href="">手机版</a>
+                    <dl class="tel_select clearfix">
+                        <dt><img src="http://b.boqiicdn.com/v2/images/tel.jpg" alt=""></dt>
+                        <dd><strong>波奇宠物APP</strong></dd>
+                        <dd>注册立享270元，首单再送330元</dd>
+                        <dd><a href="#" class="iphone"></a></dd>
+                        <dd><a href="#" class="android"></a></dd>
+                    </dl>
+                </li>
+                <li class="konw">
+                    <a href="">关注波奇</a>
+                    <div class="gz_select clearfix">
+                        <dl>
+                            <dt><img src="http://b.boqiicdn.com/v2/images/wx.gif" alt=""></dt>
+                            <dd><strong>官方微信</strong></dd>
+                            <dd class="red">boqiiwang</dd>
+                        </dl>
+                        <dl class="select_wb">
+                            <dt><img src="http://b.boqiicdn.com/v2/images/wb.gif" alt=""></dt>
+                            <dd><strong>官方微博</strong></dd>
+                            <dd class="red"><a href="#">波奇网</a><span></span></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="last clearfixs">
+                    <em class="bg"></em>
+                    <a href="">波奇首页</a>
+                    <div class="r_select">
+                        <a class="clearfix" href="#"><em class="a2"></em>波奇服务</a>
+                        <a class="clearfix" href="#"><em class="a3"></em>波奇论坛</a>
+                        <a class="clearfix" href="#"><em class="a4"></em>宠物百科</a>
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    </header>
+            
+    <!-- 标题 -->
+    <div id="logo">
+        <!-- 活动广告栏 -->
+        <div class="active_ad">
+            <a href="activity.html">
+                <img src="http://img.boqiicdn.com/Data/Shop/0/0/0/shopimgFile1538272777.jpg" alt="">
+            </a>
+        </div>
+        <!-- logo 搜索 -->
+        <div class="content clearfix">
+            <!-- logo -->
+            <div class="logo_pic">
+                <a href="#"><img src="http://b.boqiicdn.com/v2/images/shopnewlogo.png" alt=""></a>
+            </div>
+            <!-- 搜索 -->
+            <div class="sreach">
+                <div class="sreach_con clearfix">
+                    <input type="text" placeholder="伯纳天纯">
+                    <span>
+                        <a href="#">搜 索</a>
+                    </span>
+                </div>
+                <ul class="hot clearfix">
+                    <li class="keyword">
+                        热门搜索：
+                    </li>
+                    <li class="keyword">
+                        <a href="#">进口狗粮</a>
+                    </li>
+                    <li class="keyword">
+                        <a href="#">进口猫粮</a>
+                    </li>
+                    <li class="keyword">
+                        <a href="#">猫厕所</a>
+                    </li>
+                    <li class="keyword">
+                        <a href="#">猫笼</a>
+                    </li>
+                    <li class="keyword">
+                        <a href="#">口腔护理</a>
+                    </li>
+                    <li class="keyword">
+                        <a href="#">美毛护肤</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- APP广告 -->
+            <div class="ad_app">
+                <a href="#">
+                    <img src="http://b.boqiicdn.com/v2/images/ad2.gif" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div id="nav">
+        <ul class="nav_con clearfix">
+            <li class="nav1">
+                <div class="nav11 clearfix">
+                    <a href="#">全部商品分类</a>
+                    <em class="all_doction"></em>
+                </div>
+                <!-- 菜单 -->
+                <div class="menu">
+                    <div class="pet">
+                        <dl class="dog clearfix">
+                            <dt class="clearfix">
+                                <em></em>
+                                <a href="#">狗狗商品</a>
+                                <span></span>
+                            </dt>
+                            <dd>
+                                <a href="#">主粮</a>
+                            </dd>
+                            <dd>
+                                <a href="#">零食</a>
+                            </dd>
+                            <dd>
+                                <a href="#">医疗</a>
+                            </dd>
+                            <dd>
+                                <a href="#">保健</a>
+                            </dd>
+                            <dd>
+                                <a href="#">出行</a>
+                            </dd>
+                            <dd>
+                                <a href="#">日用</a>
+                            </dd>
+                            <dd>
+                                <a href="#">玩具</a>
+                            </dd>
+                            <dd>
+                                <a href="#">美容</a>
+                            </dd>
+                        </dl>
+                        <div class="condiv0">
+                            <dl class="clearfix">
+                                <dt><a href="#">冻干粮</a>
+                                <dd>
+                                    <span>|</span><a href="#">进口粮</a>
+                                    <span>|</span><a href="#">国产粮</a>
+                                    <span>|</span><a href="#">处方粮</a>
+                                    <span>|</span><a href="#">冻干凉</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗零食</a>
+                                <dd>
+                                    <span>|</span><a href="#">罐头湿粮</a>
+                                    <span>|</span><a href="#">肉类零食</a>
+                                    <span>|</span><a href="#">磨牙洁齿</a>
+                                    <span>|</span><a href="#">奶酪饼干</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">医疗护理</a>
+                                <dd>
+                                    <span>|</span><a href="#">皮肤治疗</a>
+                                    <span>|</span><a href="#">综合护理</a>
+                                    <span>|</span><a href="#">内外驱虫</a>
+                                    <span>|</span><a href="#">常备药品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">营养保健</a>
+                                <dd>
+                                    <span>|</span><a href="#">美毛护肤</a>
+                                    <span>|</span><a href="#">补钙健骨</a>
+                                    <span>|</span><a href="#">肠胃调理</a>
+                                    <span>|</span><a href="#">综合营养</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">生活日用</a>
+                                <dd>
+                                    <span>|</span><a href="#">狗狗餐具</a>
+                                    <span>|</span><a href="#">狗狗住所</a>
+                                    <span>|</span><a href="#">排便清洁</a>
+                                    <span>|</span><a href="#">服装饰品</a>
+                                    <span>|</span><a href="#">训练用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">出行装备</a>
+                                <dd>
+                                    <span>|</span><a href="#">航空箱包</a>
+                                    <span>|</span><a href="#">牵引系列</a>
+                                    <span>|</span><a href="#">胸背套装</a>
+                                    <span>|</span><a href="#">项圈狗牌</a>
+                                    <span>|</span><a href="#">外出辅助</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗美容</a>
+                                <dd>
+                                    <span>|</span><a href="#">洗护箱包</a>
+                                    <span>|</span><a href="#">梳剪工具</a>
+                                    <span>|</span><a href="#">洗澡用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗玩具</a>
+                                <dd>
+                                    <span>|</span><a href="#">磨牙玩具</a>
+                                    <span>|</span><a href="#">训练玩具</a>
+                                    <span>|</span><a href="#">漏食玩具</a>
+                                    <span>|</span><a href="#">互动玩具</a>
+                                    <span>|</span><a href="#">毛绒玩具</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pet">
+                        <dl class="cat clearfix">
+                            <dt class="clearfix">
+                                <em></em>
+                                <a href="#">猫猫用品</a>
+                                <span></span>
+                            </dt>
+                            <dd>
+                                <a href="#">主粮</a>
+                            </dd>
+                            <dd>
+                                <a href="#">零食</a>
+                            </dd>
+                            <dd>
+                                <a href="#">医疗</a>
+                            </dd>
+                            <dd>
+                                <a href="#">保健</a>
+                            </dd>
+                            <dd>
+                                <a href="#">猫砂</a>
+                            </dd>
+                            <dd>
+                                <a href="#">日用</a>
+                            </dd>
+                            <dd>
+                                <a href="#">玩具</a>
+                            </dd>
+                            <dd>
+                                <a href="#">美容</a>
+                            </dd>
+                        </dl>
+                        <div class="condiv0">
+                            <dl class="clearfix">
+                                <dt><a href="#">猫咪主粮</a>
+                                <dd>
+                                    <span>|</span><a href="#">进口粮</a>
+                                    <span>|</span><a href="#">国产粮</a>
+                                    <span>|</span><a href="#">处方粮</a>
+                                    <span>|</span><a href="#">冻干凉</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">猫咪零食</a>
+                                <dd>
+                                    <span>|</span><a href="#">罐头湿粮</a>
+                                    <span>|</span><a href="#">肉类零食</a>
+                                    <span>|</span><a href="#">猫草薄荷</a>
+                                    <span>|</span><a href="#">休闲零食</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">医疗护理</a>
+                                <dd>
+                                    <span>|</span><a href="#">皮肤治疗</a>
+                                    <span>|</span><a href="#">综合护理</a>
+                                    <span>|</span><a href="#">内外驱虫</a>
+                                    <span>|</span><a href="#">常备药品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">营养保健</a>
+                                <dd>
+                                    <span>|</span><a href="#">美毛化毛</a>
+                                    <span>|</span><a href="#">补钙健骨</a>
+                                    <span>|</span><a href="#">肠胃调理</a>
+                                    <span>|</span><a href="#">综合营养</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">猫砂猫厕</a>
+                                <dd>
+                                    <span>|</span><a href="#">膨润土猫砂</a>
+                                    <span>|</span><a href="#">水晶猫砂</a>
+                                    <span>|</span><a href="#">松木猫砂</a>
+                                    <span>|</span><a href="#">纸砂豆腐砂</a>
+                                    <span>|</span><a href="#">矿物猫砂</a>
+                                    <span>|</span><a href="#">猫砂除臭</a>
+                                    <span>|</span><a href="#">猫咪厕所</a>
+                                    <span>|</span><a href="#">排便清洁</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">生活日用</a>
+                                <dd>
+                                    <span>|</span><a href="#">猫咪餐具</a>
+                                    <span>|</span><a href="#">服装饰品</a>
+                                    <span>|</span><a href="#">猫咪住所</a>
+                                    <span>|</span><a href="#">出行用品</a>
+                                    <span>|</span><a href="#">训练用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">猫咪玩具</a>
+                                <dd>
+                                    <span>|</span><a href="#">猫爬架</a>
+                                    <span>|</span><a href="#">猫抓板</a>
+                                    <span>|</span><a href="#">逗猫玩具</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">猫咪美容</a>
+                                <dd>
+                                    <span>|</span><a href="#">洗护香波</a>
+                                    <span>|</span><a href="#">梳剪工具</a>
+                                    <span>|</span><a href="#">洗澡用品</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pet">
+                        <dl class="smallpet clearfix">
+                            <dt class="clearfix">
+                                <em></em>
+                                <a href="#">奇趣小宠</a>
+                                <span></span>
+                            </dt>
+                            <dd>
+                                <a href="#">兔子</a>
+                            </dd>
+                            <dd>
+                                <a href="#">仓鼠</a>
+                            </dd>
+                            <dd>
+                                <a href="#">龙猫</a>
+                            </dd>
+                        </dl>
+                        <div class="condiv0">
+                            <dl class="clearfix">
+                                <dt><a href="#">冻干粮</a>
+                                <dd>
+                                    <span>|</span><a href="#">进口粮</a>
+                                    <span>|</span><a href="#">国产粮</a>
+                                    <span>|</span><a href="#">处方粮</a>
+                                    <span>|</span><a href="#">冻干凉</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗零食</a>
+                                <dd>
+                                    <span>|</span><a href="#">罐头湿粮</a>
+                                    <span>|</span><a href="#">肉类零食</a>
+                                    <span>|</span><a href="#">磨牙洁齿</a>
+                                    <span>|</span><a href="#">奶酪饼干</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">医疗护理</a>
+                                <dd>
+                                    <span>|</span><a href="#">皮肤治疗</a>
+                                    <span>|</span><a href="#">综合护理</a>
+                                    <span>|</span><a href="#">内外驱虫</a>
+                                    <span>|</span><a href="#">常备药品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">营养保健</a>
+                                <dd>
+                                    <span>|</span><a href="#">美毛护肤</a>
+                                    <span>|</span><a href="#">补钙健骨</a>
+                                    <span>|</span><a href="#">肠胃调理</a>
+                                    <span>|</span><a href="#">综合营养</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">生活日用</a>
+                                <dd>
+                                    <span>|</span><a href="#">狗狗餐具</a>
+                                    <span>|</span><a href="#">狗狗住所</a>
+                                    <span>|</span><a href="#">排便清洁</a>
+                                    <span>|</span><a href="#">服装饰品</a>
+                                    <span>|</span><a href="#">训练用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">出行装备</a>
+                                <dd>
+                                    <span>|</span><a href="#">航空箱包</a>
+                                    <span>|</span><a href="#">牵引系列</a>
+                                    <span>|</span><a href="#">胸背套装</a>
+                                    <span>|</span><a href="#">项圈狗牌</a>
+                                    <span>|</span><a href="#">外出辅助</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗美容</a>
+                                <dd>
+                                    <span>|</span><a href="#">洗护箱包</a>
+                                    <span>|</span><a href="#">梳剪工具</a>
+                                    <span>|</span><a href="#">洗澡用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗玩具</a>
+                                <dd>
+                                    <span>|</span><a href="#">磨牙玩具</a>
+                                    <span>|</span><a href="#">训练玩具</a>
+                                    <span>|</span><a href="#">漏食玩具</a>
+                                    <span>|</span><a href="#">互动玩具</a>
+                                    <span>|</span><a href="#">毛绒玩具</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pet">
+                        <dl class="water_pet clearfix">
+                            <dt class="clearfix">
+                                <em></em>
+                                <a href="#">水族市场</a>
+                                <span></span>
+                            </dt>
+                            <dd>
+                                <a href="#">鱼食</a>
+                            </dd>
+                            <dd>
+                                <a href="#">鱼缸</a>
+                            </dd>
+                            <dd>
+                                <a href="#">器材</a>
+                            </dd>
+                            <dd>
+                                <a href="#">药水</a>
+                            </dd>
+                            <dd>
+                                <a href="#">造景</a>
+                            </dd>
+                        </dl>
+                        <div class="condiv0">
+                            <dl class="clearfix">
+                                <dt><a href="#">冻干粮</a>
+                                <dd>
+                                    <span>|</span><a href="#">进口粮</a>
+                                    <span>|</span><a href="#">国产粮</a>
+                                    <span>|</span><a href="#">处方粮</a>
+                                    <span>|</span><a href="#">冻干凉</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗零食</a>
+                                <dd>
+                                    <span>|</span><a href="#">罐头湿粮</a>
+                                    <span>|</span><a href="#">肉类零食</a>
+                                    <span>|</span><a href="#">磨牙洁齿</a>
+                                    <span>|</span><a href="#">奶酪饼干</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">医疗护理</a>
+                                <dd>
+                                    <span>|</span><a href="#">皮肤治疗</a>
+                                    <span>|</span><a href="#">综合护理</a>
+                                    <span>|</span><a href="#">内外驱虫</a>
+                                    <span>|</span><a href="#">常备药品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">营养保健</a>
+                                <dd>
+                                    <span>|</span><a href="#">美毛护肤</a>
+                                    <span>|</span><a href="#">补钙健骨</a>
+                                    <span>|</span><a href="#">肠胃调理</a>
+                                    <span>|</span><a href="#">综合营养</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">生活日用</a>
+                                <dd>
+                                    <span>|</span><a href="#">狗狗餐具</a>
+                                    <span>|</span><a href="#">狗狗住所</a>
+                                    <span>|</span><a href="#">排便清洁</a>
+                                    <span>|</span><a href="#">服装饰品</a>
+                                    <span>|</span><a href="#">训练用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">出行装备</a>
+                                <dd>
+                                    <span>|</span><a href="#">航空箱包</a>
+                                    <span>|</span><a href="#">牵引系列</a>
+                                    <span>|</span><a href="#">胸背套装</a>
+                                    <span>|</span><a href="#">项圈狗牌</a>
+                                    <span>|</span><a href="#">外出辅助</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗美容</a>
+                                <dd>
+                                    <span>|</span><a href="#">洗护箱包</a>
+                                    <span>|</span><a href="#">梳剪工具</a>
+                                    <span>|</span><a href="#">洗澡用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗玩具</a>
+                                <dd>
+                                    <span>|</span><a href="#">磨牙玩具</a>
+                                    <span>|</span><a href="#">训练玩具</a>
+                                    <span>|</span><a href="#">漏食玩具</a>
+                                    <span>|</span><a href="#">互动玩具</a>
+                                    <span>|</span><a href="#">毛绒玩具</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pet">
+                        <dl class="about_pet clearfix">
+                            <dt class="clearfix">
+                                <em></em>
+                                <a href="#">萌宠周边</a>
+                                <span></span>
+                            </dt>
+                            <dd>
+                                <a href="#">布艺</a>
+                            </dd>
+                            <dd>
+                                <a href="#">装饰</a>
+                            </dd>
+                            <dd>
+                                <a href="#">家居</a>
+                            </dd>
+                        </dl> 
+                        <div class="condiv0">
+                            <dl class="clearfix">
+                                <dt><a href="#">冻干粮</a>
+                                <dd>
+                                    <span>|</span><a href="#">进口粮</a>
+                                    <span>|</span><a href="#">国产粮</a>
+                                    <span>|</span><a href="#">处方粮</a>
+                                    <span>|</span><a href="#">冻干凉</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗零食</a>
+                                <dd>
+                                    <span>|</span><a href="#">罐头湿粮</a>
+                                    <span>|</span><a href="#">肉类零食</a>
+                                    <span>|</span><a href="#">磨牙洁齿</a>
+                                    <span>|</span><a href="#">奶酪饼干</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">医疗护理</a>
+                                <dd>
+                                    <span>|</span><a href="#">皮肤治疗</a>
+                                    <span>|</span><a href="#">综合护理</a>
+                                    <span>|</span><a href="#">内外驱虫</a>
+                                    <span>|</span><a href="#">常备药品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">营养保健</a>
+                                <dd>
+                                    <span>|</span><a href="#">美毛护肤</a>
+                                    <span>|</span><a href="#">补钙健骨</a>
+                                    <span>|</span><a href="#">肠胃调理</a>
+                                    <span>|</span><a href="#">综合营养</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">生活日用</a>
+                                <dd>
+                                    <span>|</span><a href="#">狗狗餐具</a>
+                                    <span>|</span><a href="#">狗狗住所</a>
+                                    <span>|</span><a href="#">排便清洁</a>
+                                    <span>|</span><a href="#">服装饰品</a>
+                                    <span>|</span><a href="#">训练用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">出行装备</a>
+                                <dd>
+                                    <span>|</span><a href="#">航空箱包</a>
+                                    <span>|</span><a href="#">牵引系列</a>
+                                    <span>|</span><a href="#">胸背套装</a>
+                                    <span>|</span><a href="#">项圈狗牌</a>
+                                    <span>|</span><a href="#">外出辅助</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗美容</a>
+                                <dd>
+                                    <span>|</span><a href="#">洗护箱包</a>
+                                    <span>|</span><a href="#">梳剪工具</a>
+                                    <span>|</span><a href="#">洗澡用品</a>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt><a href="#">狗狗玩具</a>
+                                <dd>
+                                    <span>|</span><a href="#">磨牙玩具</a>
+                                    <span>|</span><a href="#">训练玩具</a>
+                                    <span>|</span><a href="#">漏食玩具</a>
+                                    <span>|</span><a href="#">互动玩具</a>
+                                    <span>|</span><a href="#">毛绒玩具</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav2 cur">
+                <a href="#">首页</a>
+            </li>
+            <li class="nav2">
+                <a href="#">狗狗</a>
+            </li>
+            <li class="nav2">
+                <a href="#">猫猫</a>
+            </li>
+            <li class="nav2">
+                <a href="#">小宠</a>
+            </li>
+            <li class="nav2">
+                <a href="#">水族</a>
+            </li>
+            <li class="nav2">
+                <a href="#">全球购</a>
+            </li>
+            <li class="nav2">
+                <a href="#">创意生活</a>
+            </li>
+            <li class="nav2">
+                <a href="#">品牌馆</a>
+            </li>
+            <li class="nav2">
+                <a href="#">波奇服务</a>
+            </li>
+            <li class="nav3 clearfix">
+                <em></em>
+                <a href="#">购物车</a>
+                <span>0</span>
+                <div class="shop_cart">
+                    <div class="shop_cart_no">购物车还是空的，赶紧给爱宠挑点什么吧！</div>
+                    <div class="shop_cart_yes" style="display:none;">
+                        <div class="shop_tit">已加入购物车中的商品</div>
+                        <div class="shop_body">
+                        </div>
+                        <div class="shop_num">共 <span class="ITopCartNum n1">0</span> 件商品　共计：<span class="ITopCartTotal n2">¥ 0.00</span></div>
+                        <div class="cart_btn"><a href="#">去购物车结算</a></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="bar">
+            <!-- 侧栏隐藏部分 -->
+            <div class="usr_login" id="uLogin">
+                <p class="usr_name clearfix">
+                    <label for="u_name"></label>
+                    <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱">
+                </p>   
+                <p class="pwd clearfix">
+                    <label for="u_pwd"></label>
+                    <input type="password" name="" id="u_pwd" placeholder="密码">
+                </p>  
+                <p class="realmark clearfix">
+                    <input type="text" name="" id="" placeholder="验证码">
+                    <img src="http://www.boqii.com/user/images/vcode/vcode.php?rid=0.45855331385721554" alt="">
+                </p>
+                <p class="safe clearfix">
+                    <span class="auto_login clearfix">
+                        <input type="checkbox" name="" id="">
+                        <strong>自动登录</strong>
+                    </span>
+                    <span class="forgetpwd">
+                        <span><a href="#">忘记密码</a></span>
+                        <span><a href="#">免费注册</a></span>
+                    </span>
+                </p>
+                <button>登&nbsp;&nbsp;&nbsp;录</button>
+                <p class="fastlogin">
+                    <span>使用合作网站登陆</span>
+                    <span class="coopreation clearfix">
+                        <a href="#" class="one">支付宝</a>
+                        <a href="#">新浪微博</a>
+                        <a href="#">QQ</a>
+                        <a href="#">微信</a>
+                    </span>
+                </p>
+                <b id="no"></b>
+            </div>
+            <!-- 侧栏 -->
+            <ul class="opreation">
+                <li class="user" id="iUser"> 
+                    <a href="#"><em></em></a>
+                </li>
+                <li class="buycar"> 
+                    <a href="#">
+                        <em></em>
+                        <span class="txt">购物车</span>
+                        <span class="number">0</span>
+                    </a>
+                </li>
+                <li class="money"> 
+                    <a href="#">
+                        <em></em>
+                        <span>资产</span>
+                    </a>
+                </li>
+                <li class="collection"> 
+                    <a href="#">
+                        <em></em>
+                        <span>收藏</span>
+                    </a>
+                </li>
+                <li class="ask"> 
+                    <a href="#">
+                        <em></em>
+                        <span>咨询</span>
+                    </a>
+                </li>
+                <li class="App"> 
+                    <a href="#">
+                        <em></em>
+                        <span>APP</span> 
+                    </a>
+                </li>
+                <li class="go_top">
+                    <a href="#">
+                        <em></em>
+                        <span>TOP</span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 商品详情 -->
+    <div id="detail_con">
+        <div class="top_src">
+            <a href="index.html">首页</a><span>></span>
+            <a href="#">猫咪专区</a><span>></span>
+            <a href="#">猫咪主粮</a><span>></span>
+            <a href="#">国产粮</a><span>></span>
+            <a href="#">怡亲 成猫粮专用粮2.5KG</a><span>></span>
+        </div>
+        <div class="g_detail clearfix">
+            <div class="shop_l">
+                <div class="small" id="small">
+                    <div class="film" id="film"></div>
+                    <div class="frame" id="frame"></div>
+                    <img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23291/shoppicpath11520329885_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                </div>
+                <div class="bigger" id="big">
+                    <img src="http://img-new.boqiicdn.com/Data/Shop/2/232/23291/shoppicpath11520329885_y.jpg?imageView2/2/w/360/h/360/q/100/interlace/0" alt="">
+                </div>
+            </div>
+            <div class="shop_m">
+                <p class="g_tittle">怡亲 成猫粮专用粮2.5KG</p>
+                <p class="g_cheap">[10.23-10.27]超十惠89.6元 跨品类2件5折</p>
+                <p class="price">
+                    <span class="n_price">波&nbsp; 奇&nbsp; 价：<i>￥99.5</i></span>
+                    <span class="b_price">厂商指导价：<em>￥109.50</em></span>
+                </p>
+                <p class="home">
+                    配&nbsp;&nbsp;送&nbsp;&nbsp;至：<b>北京</b> 无&nbsp;&nbsp;货；<strong>支持使用优惠券</strong>
+                </p>
+                <p class="tell">
+                    <span class="message"><a href="#"></a></span>
+                    <span class="collect2">
+                        <a href="#">收藏商品</a>
+                    </span>
+                </p>
+                <p class="little_txt">
+                    选择到货通知，到货后您将收到免费短信提醒！
+                </p>
+        
+            </div>
+            <div class="shop_r">
+                <ul class="clearfix">
+                    <li><img src="http://b.boqiicdn.com/v2/images/btn_z.jpg"><span>100%<br>正品保障</span></li>
+                    <li><img src="http://b.boqiicdn.com/v2/images/btn_c.jpg"><span>7省<br>满59免运费</span></li>
+                    <li><img src="http://b.boqiicdn.com/v2/images/btn_q.jpg"><span>7天<br>无忧退换</span></li>
+                </ul>
+                <div class="middle">
+                    <p class="design">所属品牌：<a href="#">y怡亲</a></p>
+                    <p>商品编号：  1325612</p>
+                    <p class="sold">已售<span>48275件</span></p>
+                    <p class="like-level">满意指数：</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>
