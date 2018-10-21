@@ -77,7 +77,7 @@ header h1{
 .usr_login .cont li:last-child{
     display: none;
 }
-.usr_login .usr_name{
+.cont .usr_name{
     border: 1px solid #dddddd;
     height: 48px;
     line-height: 48px;
@@ -85,13 +85,13 @@ header h1{
     padding: 0 10px
 }
 
-.usr_login .pwd{
+.cont .pwd{
     border: 1px solid #dddddd;
     height: 48px;
     line-height: 48px;
     padding: 0 10px
 }
-.usr_login label{
+.cont label{
     float: left;    
     width: 30px;
     height: 24px;
@@ -103,13 +103,16 @@ header h1{
 }
 .realmark{
     margin-top: 10px;
+    position: relative;
 }
-.usr_login .realmark input{
+.cont .realmark input{
     border: 1px solid #dddddd;
-    width: 210px; 
+    width: 160px; 
     height: 38px;
     line-height: 38px;
-    padding: 5px 10px 5px 4px
+    padding: 5px 10px 5px 4px;
+    font: 16px/38px "Microsoft YaHei";
+    padding-left: 40px
 }
 .realmark img{
     float: left;
@@ -129,7 +132,28 @@ header h1{
     margin-top: 18px;
     margin-right: 20px;
 }
-.usr_login .safe{
+.realmark .no{
+    position: absolute;
+    top: 15px;
+    left: 180px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url(http://a.boqiicdn.com/Images/sitenew/login/login.png) no-repeat -36px -33px;
+    display: none;
+}
+.cont .bg{
+    display: none;
+    height: 16px;
+    color: #f65;
+    background: #ffebec;
+    border: 1px solid #ffbdbf;
+    padding: 7px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif,"Microsoft YaHei";
+}
+.cont .safe{
     margin: 17px 0 15px;
     font-size: 12px;
     height: 12px;
@@ -243,6 +267,8 @@ header h1{
     padding-left: 0;
     border-left: none;
 }
+
+/* footer */
 footer .copyright{
     width: 990px;
     margin: 0 auto;

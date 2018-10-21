@@ -8,6 +8,11 @@ $(".last").click(function(){
     document.documentElement.scrollTop = 0
 });
 
+$("#internation").click(function(){
+    document.body.scrollTop = 1200;
+    document.documentElement.scrollTop = 1200;
+})
+
 // 所有的 a标签 不刷新
 var oA = document.querySelectorAll("a");
 for (var i = 0 ;i <= oA.length-1 ; i ++){

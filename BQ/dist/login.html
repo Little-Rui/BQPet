@@ -24,16 +24,23 @@
                 <li class="l_list">
                     <p class="usr_name clearfix">
                         <label for="u_name"></label>
-                        <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱">
+                        <input type="text" name="" id="u_name" placeholder="用户名/手机号/邮箱" data="reg">
                     </p>   
                     <p class="pwd clearfix">
                         <label for="u_pwd"></label>
-                        <input type="password" name="" id="u_pwd" placeholder="密码">
+                        <input type="password" name="" id="u_pwd" placeholder="密码" data="reg">
                     </p>  
                     <p class="realmark clearfix">
-                        <input type="text" name="" placeholder="验证码">
+                        <input type="text" name="" id="u_real" placeholder="验证码" data="reg">
                         <img src="http://www.boqii.com/user/images/vcode/vcode.php?rid=0.45855331385721554" alt="">
                         <strong><a href="#">换一张</a></strong>
+                        <i class="no"></i>
+                    </p>
+                    <p class="bg" id="bg">
+                        <i class="bg1" id="bg1">请输入用户名或者邮箱或者手机号!</i>
+                        <i class="bg2" id="bg2">请输入密码！</i>
+                        <i class="bg3" id="bg3">请输入验证码！</i>
+                        <i class="bg4" id="bg4">您输入的用户名或者密码不正确，请重新输入！</i>
                     </p>
                     <p class="safe clearfix">
                         <span class="auto_login clearfix">
@@ -64,7 +71,7 @@
                 </li>
             </ul>
             
-            <button>登&nbsp;&nbsp;录</button>
+            <button id="l_btn">登&nbsp;&nbsp;录</button>
             
             <fieldset class="fastlogin">
                 <legend>&nbsp;&nbsp;使用合作网站账号登陆&nbsp;&nbsp;</legend>
@@ -108,8 +115,10 @@
                 <a href="#"><img src="http://b.boqiicdn.com/v2/images/foot_zx.png"></a>
             </p>
         </div>
+        
     </footer>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/ajax.js"></script>
 </body>
 </html>

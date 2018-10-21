@@ -5,11 +5,11 @@ $(".go_top").click(function(){
 });
 
 
-// 所有的 a标签 不刷新
-var oA = document.querySelectorAll("a");
-for (var i = 0 ;i <= oA.length-1 ; i ++){
-    oA[i].href = "javascript:;"
-}
+// // 所有的 a标签 不刷新
+// var oA = document.querySelectorAll("a");
+// for (var i = 0 ;i <= oA.length-1 ; i ++){
+//     oA[i].href = "javascript:;";
+// }
 
 // 城市的隐藏出现
 $(".st_city").hide();
